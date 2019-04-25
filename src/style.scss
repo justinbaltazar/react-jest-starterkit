@@ -1,8 +1,5 @@
 body, html {
     font-family: "Roboto", sans-serif;
-    /* 
-    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
-    */
     background:#000;
     color:#fff;
     height: 100%;
@@ -13,4 +10,7 @@ body, html {
     height: 100px;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  .active {
+    color: pink;
   }
