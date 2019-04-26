@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router, Route, NavLink, Switch,
 } from 'react-router-dom';
+import Counter from '../containers/counter';
 import Controls from '../containers/controls';
 import '../style.scss';
 
@@ -12,8 +13,9 @@ const About = (props) => {
 const Welcome = (props) => {
   return (
     <div>
-      <Controls />
     Welcome
+      <Counter />
+      <Controls />
     </div>
   );
 };
