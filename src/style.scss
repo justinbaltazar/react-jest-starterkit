@@ -1,0 +1,16 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    background:#000;
+    color:#fff;
+    height: 100%;
+  }
+  .logo {
+    background-image: url('img/image.jpg');
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .active {
+    color: pink;
+  }
