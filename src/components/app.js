@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router, Route, NavLink, Switch,
 } from 'react-router-dom';
+import Controls from '../containers/controls';
 import '../style.scss';
 
 const About = (props) => {
@@ -9,7 +10,12 @@ const About = (props) => {
 };
 
 const Welcome = (props) => {
-  return <div>Welcome</div>;
+  return (
+    <div>
+      <Controls />
+    Welcome
+    </div>
+  );
 };
 
 const Test = (props) => {

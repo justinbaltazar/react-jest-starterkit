@@ -15,4 +15,3 @@ const Controls = (props) => {
 };
 
 export default withRouter(connect(null, { increment, decrement })(Controls));
-
