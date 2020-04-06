@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router';
 import configureStore from 'redux-mock-store';
 import Adapter from 'enzyme-adapter-react-16';
-import AppRouter from '../src/routers/AppRouter';
+import AppRouter from 'routers/AppRouter';
 
 configure({ adapter: new Adapter() });
 
