@@ -29,6 +29,11 @@ module.exports = {
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+    '^actions/(.*)$': '<rootDir>/src/actions/$1',
+    '^components/(.*)$': '<rootDir>/src/components/$1',
+    '^pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^reducers/(.*)$': '<rootDir>/src/reducers/$1',
+    '^routers/(.*)$': '<rootDir>/src/routers/$1',
   },
 
   // An array of regexp pattern strings used to skip coverage collection

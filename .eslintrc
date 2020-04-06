@@ -45,5 +45,8 @@
             "jsx": true,
             "sourceType": "module"
         }
+    },
+    "settings": {
+        "import/resolver": "webpack"
     }
 }

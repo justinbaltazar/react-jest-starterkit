@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const path = require('path');
 
 const env = process.env.NODE_ENV || 'development';
 // set to 'production' or 'development' in your env
@@ -12,6 +13,16 @@ module.exports = {
   output: { publicPath: '/' },
   entry: ['babel-polyfill', './src'], // this is where our app lives
   devtool: 'source-map', // this enables debugging with source in chrome devtools
+  resolve: {
+    extensions: ['.js'],
+    alias: {
+      actions: path.resolve(__dirname, 'src/actions'),
+      components: path.resolve(__dirname, 'src/components'),
+      pages: path.resolve(__dirname, 'src/pages'),
+      reducers: path.resolve(__dirname, 'src/reducers'),
+      routers: path.resolve(__dirname, 'src/routers'),
+    },
+  },
   module: {
     rules: [
       {
@@ -42,6 +53,8 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: true,
+              modules: true,
+              localIdentName: '[local]___[hash:base64:5]',
             },
           },
           {

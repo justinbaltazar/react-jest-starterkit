@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
-import { BrowserRouter as Router } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import reducers from './reducers';
 
@@ -15,7 +15,7 @@ const store = createStore(reducers, {}, compose(
   window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : f => f,
 ));
 
-// we now wrap App in a Provider
+// we now wrap AppRouter in a Provider for Redux
 ReactDOM.render(
   <Provider store={store}>
     <Router>
