@@ -1,5 +1,14 @@
 {
   "plugins": [
+    ["babel-plugin-react-css-modules",
+      {
+        "generateScopedName": "[local]___[hash:base64:5]",
+        "filetypes": {
+          ".scss": {
+             "syntax": "postcss-scss"
+          }
+        }
+      }],
     ["@babel/plugin-proposal-class-properties"]
   ],
   "presets": [

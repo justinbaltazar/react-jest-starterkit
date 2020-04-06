@@ -1,0 +1,12 @@
+.container {
+    border: 1px solid black;
+    background: red;
+
+    &.hovered {
+        border: 1px solid red;
+    }
+
+    &.selected {
+        border: 1px solid green;
+    }
+}
