@@ -1,6 +1,10 @@
 # React + Jest Starterkit
 
-Simple starterkit with examples on testing with Jest, mocking Redux stores, and good practices. Runs on Node v13.12.0.
+I created a simple starterkit to help myself and others build out our ideas faster. 
+
+This starterkit contains examples on testing with Jest, mocking Redux stores, and good practices. Runs on Node v13.12.0.
+
+## Getting Started
 
 - To install, run `yarn`
 - To run the Webpack Development Server, run `yarn start`
