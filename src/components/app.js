@@ -13,7 +13,7 @@ const About = (props) => {
 const Welcome = (props) => {
   return (
     <div>
-    Welcome
+      Welcome
       <Counter />
       <Controls />
     </div>
@@ -41,20 +41,17 @@ const Nav = (props) => {
   );
 };
 
-const App = (props) => {
-  return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route path="/about" component={About} />
-          <Route exact path="/test/:id" component={Test} />
-          <Route component={FallBack} />
-        </Switch>
-      </div>
-    </Router>
-  );
-};
+const App = props => (
+  <React.Fragment>
+    <Nav />
+    <Switch>
+      <Route exact path="/" component={Welcome} />
+      <Route path="/about" component={About} />
+      <Route exact path="/test/:id" component={Test} />
+      <Route component={FallBack} />
+    </Switch>
+  </React.Fragment>
+);
+
 
 export default App;
