@@ -1,4 +1,4 @@
-import { ActionTypes } from '../actions';
+import { ActionTypes } from 'actions';
 
 const CountReducer = (state = 0, action) => {
   switch (action.type) {
