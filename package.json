@@ -58,6 +58,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "jquery": "^3.4.0",
+    "keymirror": "^0.1.1",
     "lodash.debounce": "^4.0.8",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

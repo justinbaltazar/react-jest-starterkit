@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar';
 import Error404 from '../pages/Error404';
 import '../style.scss';
 
-const App = props => (
+const AppRouter = props => (
   <React.Fragment>
     <NavBar />
     <Switch>
@@ -18,4 +18,4 @@ const App = props => (
 );
 
 
-export default App;
+export default AppRouter;

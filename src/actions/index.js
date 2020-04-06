@@ -1,10 +1,10 @@
-// keys for actiontypes
 export const ActionTypes = {
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT',
+  INCREMENT: Symbol('INCREMENT'),
+  DECREMENT: Symbol('DECREMENT'),
 };
 
 
+// sample actions
 export function increment() {
   return {
     type: ActionTypes.INCREMENT,
